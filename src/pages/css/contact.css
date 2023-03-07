@@ -1,0 +1,48 @@
+#hero-section {
+    height: 700px;
+    width: 100%;
+}
+#contact-section .contact-img {
+    width: 100%;
+    height: 516px;
+    background: url("../../assets/images/Rectangle9.png");
+    background-size: cover;
+}
+.hero-card {
+    margin-top: -6%;
+}
+.hero-card .card {
+    background: var(--f6);
+    width: 400px;
+    height: 208px;
+}
+.hero-card .card-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--black);
+}
+.hero-card .card-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.team .card.card-center-text h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.team .card.card-center-text .card-subtitle h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gray);
+}
+.location{
+    width: 100%;
+    height: 697px;
+}

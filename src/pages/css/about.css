@@ -1,0 +1,149 @@
+#hero-section {
+    height: 700px;
+    width: 100%;
+}
+#hero-section .hero-img {
+    width: 100%;
+    height: 516px;
+    background: url("../../assets/images/Rectangle.png");
+    background-size: cover;
+}
+.hero-card {
+    margin-top: -6%;
+}
+.hero-card .card {
+    background: var(--f6);
+}
+.hero-card .card-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+}
+.hero-card .card-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+}
+.about-us h1 {
+    margin-top: 120px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+}
+.about-text {
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 15px;
+}
+.about-text p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Video banner style */
+#video-banner {
+    width: 100%;
+    height: 750px;
+}
+.video {
+    height: 700px;
+    width: 100%;
+    background: url("../../assets/images/Rectangle_video.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.video-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.video-icon img:hover {
+    cursor: pointer;
+}
+.video-text .h1-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+.video-text .p-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Team style */
+.team-carousel .card {
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.6) 0%, rgba(24, 24, 24, 0) 100%), url("../../assets/images/team6.png");
+    border-radius: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.team-img p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.team-img small {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grayone);
+}
+
+.team .card.img-center {
+    background: url("../../assets/images/team4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    height: 533px;
+    margin-top: 150px;
+}
+.team .card.img-top {
+    height: 533px;
+    background: url("../../assets/images/team5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-top: 70px;
+}
+.team .card.card-center-text {
+    height: 533px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.team .card.card-center-text h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+.team .card.card-center-text .card-subtitle h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gray);
+}
+

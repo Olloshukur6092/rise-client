@@ -1,0 +1,62 @@
+.navbar {
+    height: 90px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #181818;
+  }
+  .murojat {
+    color: var(--black);
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .smal {
+    float: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+  }
+  
+  .pages {
+    width: 60%;
+  }
+  .languages {
+    width: 15%;
+  }
+  .languages ul li {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--f6);
+  }
+  .languages ul li.activ {
+    background: var(--green);
+    border-radius: 8px;
+  }
+  
+  .languages ul li.activ a {
+    color: var(--white);
+  }
+  
+  
+  .pages ul li {
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--f6);
+  }
+  .pages ul li.activeNav {
+    background: var(--green);
+    border-radius: 8px;
+  }
+  .pages ul li.activeNav .nav-link {
+    color: var(--white);
+  }
+
+  

@@ -1,0 +1,13 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white: #fff;
+    --green: #05a55a;
+    --f6: #f6f6f6;
+    --gray: #747474;
+    --black: #000;
+    --grayone: #d9d9d9;
+}
