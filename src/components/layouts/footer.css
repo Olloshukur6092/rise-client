@@ -3,7 +3,7 @@ footer {
     display: flex;
     align-items: center;
     /* background: #000; */
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .nav .nav-link {

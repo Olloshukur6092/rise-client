@@ -11,6 +11,7 @@ import n9 from "../assets/news/n9.png";
 import n10 from "../assets/news/n10.png";
 import n11 from "../assets/news/n11.png";
 import date from "../assets/news/date.png";
+import gree from "../assets/news/gree.png";
 
 import "./css/news.css";
 import NewsSlider from "../components/slider/NewsSlider";
@@ -193,6 +194,62 @@ const NewsPage = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section id="news-latest">
+        <div className="container">
+          {/* row 0 */}
+          <div className="row">
+            <div className="news-latest-text col-md-12">
+              <p className="mb-0 d-flex">
+                <span className="news-title text-uppercase me-5 ">
+                  Yangiliklar
+                </span>
+                <span className="news-span text-uppercase">
+                  RISE Group haqida eng so‘nggi yangiliklarni
+                </span>
+              </p>
+              <p className="news-p text-uppercase">
+                aynan bizning platformasi orqali bilib oling
+              </p>
+            </div>
+          </div>
+
+          {/* row 1 */}
+          <div className="row">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div className="col-md-4" key={i}>
+                <div className="card border-0 mb-4">
+                  <div className="card-body card-block border-0"></div>
+                  <div className="card-footer border-0 footer-back-none p-0 pt-1">
+                    <div className="card-title">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Corrupti, soluta.
+                      </p>
+                    </div>
+                    <div className="card-subtitle">
+                      <small>27 fevral, 2023 • 1185 marta ko‘rildi</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="news-subscribe" className="mt-5">
+          {/* <div className="news-s-image">
+            <img src={gree} alt="green" className="img-fluid w-100 h-100" />
+          </div> */}
+          <div className="news-form w-50 mx-auto py-5">
+            <div className="news-form-title text-center text-white">
+              <p className="text-uppercase">so'nggi yangiliklarni olish uchun obuna bo'ling!</p>
+            </div>
+            <div className="news-form-input d-flex w-75 mx-auto">
+              <input type="text" className="form-control me-2 px-4" placeholder="Telefon raqam" />
+              <input type="button" className="input-btn px-4" value="Obuna bo'lish" />
+            </div>
+          </div>
       </section>
     </>
   );

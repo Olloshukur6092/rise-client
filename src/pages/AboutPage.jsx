@@ -102,10 +102,6 @@ const AboutPage = () => {
                 </span>
               </p>
               <p className="team-p text-uppercase">uchun biz tanishtiramiz</p>
-              {/* <small className="">Jamoamiz</small>
-              <small className="display-6">
-                Jamoamiz haqida yaqindan tanishishingiz uchun biz tanishtiramiz.
-              </small> */}
             </div>
           </div>
           <AboutSlider />
