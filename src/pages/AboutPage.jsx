@@ -91,13 +91,22 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section id="teams">
+      <section id="teams" className="mt-4">
         <div className="container">
-          <div className="team-text col-md-12">
-            <small className="">Jamoamiz</small>
-            <small className="display-6">
-              Jamoamiz haqida yaqindan tanishishingiz uchun biz tanishtiramiz.
-            </small>
+          <div className="row">
+            <div className="team-text col-md-12">
+              <p className="mb-0 d-flex">
+                <span className="team-title text-uppercase me-5">Jamoamiz</span>
+                <span className="team-span text-uppercase">
+                  jamoamiz haqida yaqindan tanishingiz
+                </span>
+              </p>
+              <p className="team-p text-uppercase">uchun biz tanishtiramiz</p>
+              {/* <small className="">Jamoamiz</small>
+              <small className="display-6">
+                Jamoamiz haqida yaqindan tanishishingiz uchun biz tanishtiramiz.
+              </small> */}
+            </div>
           </div>
           <AboutSlider />
           <div className="team">

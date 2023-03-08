@@ -86,7 +86,8 @@
 
 /* Team style */
 .team-carousel .card {
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0.6) 0%, rgba(24, 24, 24, 0) 100%), url("../../assets/images/team6.png");
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.6) 0%, rgba(24, 24, 24, 0) 100%),
+        url("../../assets/images/team6.png");
     border-radius: 8px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,3 +148,19 @@
     color: var(--gray);
 }
 
+/* teams classes */
+.team-text .team-span,
+.team-text .team-p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+}
+.team-text .team-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+    margin-top: 12px;
+}

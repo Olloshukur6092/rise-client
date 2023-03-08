@@ -19,7 +19,7 @@ const AboutSlider = () => {
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     speed: 500,
