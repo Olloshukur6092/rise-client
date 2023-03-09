@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NewsPage from "./pages/NewsPage";
+import ShowNewsPage from "./pages/ShowNewsPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/news" element={<NewsPage />} />
+        <Route path="/news/:id" element={<ShowNewsPage />} />
       </Routes>
       <Footer />
     </div>
