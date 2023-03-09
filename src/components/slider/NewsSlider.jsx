@@ -3,6 +3,7 @@ import icon from "../../assets/news/icon.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const NewsSlider = ({ news }) => {
   const sliderRef = useRef();
@@ -58,16 +59,18 @@ const NewsSlider = ({ news }) => {
           ? news.map((n) => (
               <div className="col-md-2" key={n.id}>
                 <div className="card card-body p-0 border-0 me-3">
-                  <div className="img-card position-relative">
-                    <img
-                      src={n.image}
-                      alt={n.id}
-                      className="img-fluid w-100 h-100"
-                    />
-                    <div className="text-card position-absolute bottom-0 w-100">
-                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <Link to={`/news/${n.id}`}>
+                    <div className="img-card position-relative">
+                      <img
+                        src={n.image}
+                        alt={n.id}
+                        className="img-fluid w-100 h-100"
+                      />
+                      <div className="text-card position-absolute bottom-0 w-100">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             ))

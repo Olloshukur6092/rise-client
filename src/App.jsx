@@ -6,9 +6,13 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NewsPage from "./pages/NewsPage";
+<<<<<<< HEAD
 import Create from "./pages/admin/Create";
 import ShowNews from "./pages/admin/ShowNews";
 import Login from "./pages/admin/Login";
+=======
+import ShowNewsPage from "./pages/ShowNewsPage";
+>>>>>>> 88973250534f939b1558acfcb29882a7b9ca1bf8
 
 function App() {
   return (
@@ -19,9 +23,13 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/news" element={<NewsPage />} />
+<<<<<<< HEAD
         <Route path="/admin/create" element={<Create />} />
         <Route path="/admin/news" element={<ShowNews />} />
         <Route path="/admin/login" element={<Login />} />
+=======
+        <Route path="/news/:id" element={<ShowNewsPage />} />
+>>>>>>> 88973250534f939b1558acfcb29882a7b9ca1bf8
       </Routes>
       <Footer />
     </div>
