@@ -7,6 +7,8 @@
     height: 516px;
     background: url("../../assets/images/Rectangle.png");
     background-size: cover;
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
 }
 .hero-card {
     margin-top: -6%;
@@ -58,6 +60,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 8px;
+    background-size: 100% 100%;  
 }
 .video-icon {
     width: 100%;
@@ -164,3 +167,52 @@
     color: var(--gray);
     margin-top: 12px;
 }
+
+/* Media query */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 576px) {
+    #hero-section .card-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #hero-section .card-subtitle, #hero-section .about-text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #hero-section .hero-card{
+        width: 360px;
+        height: 360px;
+    }
+    #hero-section .about-text{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    #teams .card-title h3{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 576px) and (max-width: 768px) {
+        
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 992px) {
+
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
+  

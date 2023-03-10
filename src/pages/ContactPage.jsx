@@ -19,13 +19,13 @@ const ContactPage = () => {
             <div className="container">
               <div className="row">
                 <div className="col-md-4">
-                  <div className="about-us">
+                  <div className="contact">
                     <h1 className="text-white mt-5">Bog‘lanish</h1>
                   </div>
                 </div>
                 <div className="col-md-4" />
                 <div className="col-md-4">
-                  <div className="about-text">
+                  <div className="contact-text">
                     <p className="text-white">
                       Biz bilan bog‘lanish mumkin bo‘lgan barcha ma’lumotlarni
                       shu bo‘limdan olishingiz mumkin
@@ -35,7 +35,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <div className="hero-card">
+          <div className="contact-card">
             <div className="container">
               <div className="row">
                 <div className="col-md-4">

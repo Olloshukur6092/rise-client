@@ -10,7 +10,7 @@ const AboutPage = () => {
         <div className="hero-img">
           <div className="container">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 col-2">
                 <div className="about-us">
                   <h1 className="text-white">Biz Haqimizda</h1>
                 </div>
@@ -30,8 +30,8 @@ const AboutPage = () => {
         <div className="hero-card">
           <div className="container">
             <div className="row">
-              <div className="col-md-4">
-                <div className="card card-body p-4 border-0">
+              <div className="col-md-4 mb-4">
+                <div className="card card-body border-0">
                   <div className="card-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aliquam, recusandae!
@@ -43,8 +43,8 @@ const AboutPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="card card-body p-4 border-0">
+              <div className="col-md-4 mb-4">
+                <div className="card card-body border-0">
                   <div className="card-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aliquam, recusandae!
@@ -56,8 +56,8 @@ const AboutPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="card card-body p-4 border-0">
+              <div className="col-md-4 mb-4">
+                <div className="card card-body border-0">
                   <div className="card-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aliquam, recusandae!
@@ -74,7 +74,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section id="video-banner">
+      <section id="video-banner mt-5">
         <div className="container">
           <div className="video">
             <div className="video-text d-flex justify-content-between text-white p-4">
