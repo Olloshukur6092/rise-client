@@ -24,7 +24,7 @@ const AboutSlider = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 4000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [

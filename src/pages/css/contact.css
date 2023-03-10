@@ -13,8 +13,6 @@
 }
 .hero-card .card {
     background: var(--f6);
-    width: 400px;
-    height: 208px;
 }
 .hero-card .card-title {
     font-weight: 700;

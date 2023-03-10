@@ -69,28 +69,24 @@ const NewsPage = () => {
           <div className="row">
             {/* col-8 */}
             <div className="col-md-8">
-              <div className="card card-body p-0 border-0">
+              <div className="card card-body p-0 border-0 mb-2">
                 <div className="news-image position-relative">
                   <img src={n7} className="img-fluid w-100 h-100" alt="N8" />
                   <div className="news-back position-absolute">
-                    <div className="news-text position-absolute bottom-0 p-4">
-                      <div className="news-date d-flex align-items-center mb-2">
+                    <div className="news-text position-absolute bottom-0 p-lg-3 p-md-2 p-xl-3 p-xxl-4 p-sm-4">
+                      <div className="news-date d-flex align-items-center">
                         <div className="news-date-img me-2">
                           <img src={date} alt="date" />
                         </div>
                         <small>27-fevral, 2023</small>
                       </div>
-                      <div className="news-title text-white mb-2">
+                      <div className="news-title text-white mb-1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Corrupti officiis culpa fugiat aliquid sed consequatur!
-                        Molestias magni explicabo quisquam vitae!
+                        Aut, nam?
                       </div>
                       <div className="news-description text-white">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Suscipit, consequatur dolor. Magni suscipit ipsum
-                        perferendis corporis, blanditiis fugiat cumque, est
-                        voluptatibus sequi laborum libero iste accusantium enim
-                        aperiam accusamus voluptatem omnis perspiciatis!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas deserunt molestias laudantium quisquam, a at.
                       </div>
                     </div>
                   </div>
@@ -104,21 +100,19 @@ const NewsPage = () => {
                 <div className="news-image position-relative">
                   <img src={n8} className="img-fluid w-100 h-100" alt="N8" />
                   <div className="news-back position-absolute">
-                    <div className="news-text position-absolute bottom-0 p-4">
+                    <div className="news-text position-absolute bottom-0 p-md-2 p-lg-3 p-xl-4 p-xxl-4 p-sm-4">
                       <div className="news-date d-flex align-items-center mb-2">
                         <div className="news-date-img me-2">
                           <img src={date} alt="date" />
                         </div>
                         <small>27-fevral, 2023</small>
                       </div>
-                      <div className="news-title text-white mb-2">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit.
+                      <div className="news-title text-white mb-1">
+                        Lorem ipsum dolor sit amet.
                       </div>
                       <div className="news-description text-white">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Harum omnis, odio asperiores quas consequatur quos
-                        perspiciatis.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Velit magni sed voluptas?
                       </div>
                     </div>
                   </div>
@@ -129,63 +123,60 @@ const NewsPage = () => {
 
           {/* row 2 */}
           <div className="row mt-3">
-            <div className="col-md-4">
-              <div className="card card-body p-0 border-0">
+            <div className="col-lg-4 col-md-6">
+              <div className="card card-body p-0 border-0 mb-2">
                 <div className="news-image position-relative">
                   <img src={n9} className="img-fluid w-100 h-100" alt="N8" />
                   <div className="news-back position-absolute">
                     <div className="news-text position-absolute bottom-0 p-3">
-                      <div className="news-date d-flex align-items-center mb-2">
+                      <div className="news-date d-flex align-items-center">
                         <div className="news-date-img me-2">
                           <img src={date} alt="date" />
                         </div>
                         <small>27-fevral, 2023</small>
                       </div>
-                      <div className="news-title text-white mb-2">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit.
+                      <div className="news-title text-white">
+                        Lorem ipsum dolor sit amet.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card card-body p-0 border-0">
+            <div className="col-lg-4 col-md-6">
+              <div className="card card-body p-0 border-0 mb-2">
                 <div className="news-image position-relative">
                   <img src={n10} className="img-fluid w-100 h-100" alt="N8" />
                   <div className="news-back position-absolute">
                     <div className="news-text position-absolute bottom-0 p-3">
-                      <div className="news-date d-flex align-items-center mb-2">
+                      <div className="news-date d-flex align-items-center">
                         <div className="news-date-img me-2">
                           <img src={date} alt="date" />
                         </div>
                         <small>27-fevral, 2023</small>
                       </div>
-                      <div className="news-title text-white mb-2">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit.
+                      <div className="news-title text-white">
+                        Lorem ipsum, dolor sit amet.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card card-body p-0 border-0">
+            <div className="col-lg-4 col-md-6">
+              <div className="card card-body p-0 border-0 mb-2">
                 <div className="news-image position-relative">
                   <img src={n11} className="img-fluid w-100 h-100" alt="N8" />
                   <div className="news-back position-absolute">
                     <div className="news-text position-absolute bottom-0 p-3">
-                      <div className="news-date d-flex align-items-center mb-2">
+                      <div className="news-date d-flex align-items-center">
                         <div className="news-date-img me-2">
                           <img src={date} alt="date" />
                         </div>
                         <small>27-fevral, 2023</small>
                       </div>
-                      <div className="news-title text-white mb-2">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit.
+                      <div className="news-title text-white">
+                        Lorem ipsum, dolor sit amet.
                       </div>
                     </div>
                   </div>
@@ -198,18 +189,14 @@ const NewsPage = () => {
       <section id="news-latest">
         <div className="container">
           {/* row 0 */}
-          <div className="row">
-            <div className="news-latest-text col-md-12">
-              <p className="mb-0 d-flex">
-                <span className="news-title text-uppercase me-5 ">
-                  Yangiliklar
-                </span>
-                <span className="news-span text-uppercase">
-                  RISE Group haqida eng so‘nggi yangiliklarni
-                </span>
+          <div className="row mb-3">
+            <div className="col-md-12">
+              <p className="mb-2">
+                <span className="small">Afzalliklarimiz</span>
               </p>
-              <p className="news-p text-uppercase">
-                aynan bizning platformasi orqali bilib oling
+              <p className="news-about mt-0">
+                Xorijiy mamlakatlar bilan raqobatlasha oladigan mahsulotimizning
+                asosiy afzalliklari quyidagilardan iborat
               </p>
             </div>
           </div>
@@ -237,10 +224,7 @@ const NewsPage = () => {
           </div>
         </div>
       </section>
-      <section id="news-subscribe" className="mt-5">
-          {/* <div className="news-s-image">
-            <img src={gree} alt="green" className="img-fluid w-100 h-100" />
-          </div> */}
+      {/* <section id="news-subscribe" className="mt-5">
           <div className="news-form w-50 mx-auto py-5">
             <div className="news-form-title text-center text-white">
               <p className="text-uppercase">so'nggi yangiliklarni olish uchun obuna bo'ling!</p>
@@ -250,7 +234,7 @@ const NewsPage = () => {
               <input type="button" className="input-btn px-4" value="Obuna bo'lish" />
             </div>
           </div>
-      </section>
+      </section> */}
     </>
   );
 };

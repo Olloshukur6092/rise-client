@@ -13,7 +13,6 @@ const NewsSlider = ({ news }) => {
   };
 
   const settings = {
-    dots: false,
     arrows: false,
     infinite: true,
     speed: 500,
@@ -25,19 +24,17 @@ const NewsSlider = ({ news }) => {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
         },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
         },
       },
       {
@@ -46,7 +43,6 @@ const NewsSlider = ({ news }) => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
         },
       },
     ],

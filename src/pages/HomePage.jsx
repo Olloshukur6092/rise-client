@@ -40,14 +40,13 @@ const HomePage = () => {
         </section>
         <section id="home-section-2">
           <div className="row">
-            <div className="col-md-10">
-              <p className="header-3 mb-0">
+            <div className="col-md-12">
+              <p className="mb-2">
                 <span className="small">Afzalliklarimiz</span>
-                Xorijiy mamlakatlar bilan raqobatlasha
               </p>
               <p className="header-3 mt-0">
-                oladigan mahsulotimizning asosiy afzalliklari quyidagilardan
-                iborat
+                Xorijiy mamlakatlar bilan raqobatlasha oladigan mahsulotimizning
+                asosiy afzalliklari quyidagilardan iborat
               </p>
             </div>
           </div>
@@ -73,7 +72,7 @@ const HomePage = () => {
                   <img className="px-3 py-3" src={Vector1} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -88,7 +87,7 @@ const HomePage = () => {
                   <img className="px-3 py-3" src={Vector2} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -100,12 +99,12 @@ const HomePage = () => {
           </div>
           <div className="row mb-5">
             <div className="col-md-4 col-sm-6">
-              <div className="card">
+              <div className="card mb-3">
                 <div className="card-header border-0">
                   <img className="px-3 py-3" src={Vector3} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -116,12 +115,12 @@ const HomePage = () => {
             </div>
             <div className="col-md-4 d-md-block d-sm-none" />
             <div className="col-md-4 col-sm-6">
-              <div className="card">
+              <div className="card mb-3">
                 <div className="card-header border-0">
                   <img className="px-3 py-3" src={Vector4} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -134,14 +133,13 @@ const HomePage = () => {
         </section>
         <section id="home-section-3">
           <div className="row">
-            <div className="col-md-10">
-              <p className="header-3 mb-0">
+            <div className="col-md-12">
+              <p className="mb-0">
                 <span className="small">Afzalliklarimiz</span>
-                Xorijiy mamlakatlar bilan raqobatlasha
               </p>
               <p className="header-3 mt-0">
-                oladigan mahsulotimizning asosiy afzalliklari quyidagilardan
-                iborat
+                Xorijiy mamlakatlar bilan raqobatlasha oladigan mahsulotimizning
+                asosiy afzalliklari quyidagilardan iborat
               </p>
             </div>
           </div>
@@ -165,236 +163,173 @@ const HomePage = () => {
         </section>
         <section id="home-section-4">
           <div className="row">
-            <div className="col-md-10">
-              <p className="header-3 mb-0">
+            <div className="col-md-12">
+              <p className="mb-0">
                 <span className="small">Afzalliklarimiz</span>
-                Xorijiy mamlakatlar bilan raqobatlasha
               </p>
               <p className="header-3 mt-0">
-                oladigan mahsulotimizning asosiy afzalliklari quyidagilardan
-                iborat
+                Xorijiy mamlakatlar bilan raqobatlasha oladigan mahsulotimizning
+                asosiy afzalliklari quyidagilardan iborat
               </p>
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
-              <div className="card crd-2">
-                <div className="card-body">
-                  <img className="img-fluid img" src={Rectangle7} alt="ss" />
-                  lorem ipsum dolor sit amet consectetur
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 mb-3">
+                <div className="card-body p-0">
+                  <img
+                    className="img-fluid h-100 w-100"
+                    src={Rectangle7}
+                    alt="ss"
+                  />
+                  <div className="img-p pt-3 ps-3 p-md-2">
+                    <p>lorem ipsum dolor sit amet consectetur</p>
+                  </div>
                 </div>
-                <div className="card-footer">
+                <hr className="m-1" />
+                <div className="card-footer border-0">
                   <div className="row">
-                    <div className="col-md-6 mb-3">
-                      <div className="sm px-2">
-                        <img src={Vector5} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
+                    <div className="col-lg-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector5} alt="ss" className="img-fluid" />{" "}
+                          200sm
+                        </div>
+                        <span className="width-sm">eni</span>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector6} alt="ss" />4 sm{" "}
-                        <span className="small float-end">eni</span>
+                    <div className="col-lg-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
+                          250sm
+                        </div>
+                        <span className="width-sm">bo'yi</span>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector7} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
+                    <div className="col-lg-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector7} alt="ss" className="img-fluid" />{" "}
+                          12.5mm
+                        </div>
+                        <span className="width-sm">qalinligi</span>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        4 sm <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card crd-2">
-                <div className="card-body">
-                  <img className="img-fluid img" src={Rectangle7} alt="ss" />
-                  lorem ipsum dolor sit amet consectetur
-                </div>
-                <div className="card-footer">
-                  <div className="row">
-                    <div className="col-md-6 mb-3">
-                      <div className="sm px-2">
-                        <img src={Vector5} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector6} alt="ss" />4 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector7} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        4 sm <span className="small float-end">eni</span>
+                    <div className="col-lg-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="background"></div>
+                        <span className="width-sm">rangi</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card crd-2">
-                <div className="card-body">
-                  <img className="img-fluid img" src={Rectangle7} alt="ss" />
-                  lorem ipsum dolor sit amet consectetur
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 mb-3">
+                <div className="card-body p-0">
+                  <img
+                    className="img-fluid h-100 w-100"
+                    src={Rectangle7}
+                    alt="ss"
+                  />
+                  <div className="img-p pt-3 ps-3">
+                    <p>lorem ipsum dolor sit amet consectetur</p>
+                  </div>
                 </div>
-                <div className="card-footer">
+                <hr className="m-1" />
+                <div className="card-footer border-0">
                   <div className="row">
                     <div className="col-md-6 mb-3">
-                      <div className="sm px-2">
-                        <img src={Vector5} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector5} alt="ss" className="img-fluid" />{" "}
+                          200sm
+                        </div>
+                        <span className="width-sm">eni</span>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector6} alt="ss" />4 sm{" "}
-                        <span className="small float-end">eni</span>
+                    <div className="col-md-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
+                          250sm
+                        </div>
+                        <span className="width-sm">bo'yi</span>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector7} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
+                    <div className="col-md-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector7} alt="ss" className="img-fluid" />{" "}
+                          12.5mm
+                        </div>
+                        <span className="width-sm">qalinligi</span>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        4 sm <span className="small float-end">eni</span>
+                    <div className="col-md-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="background"></div>
+                        <span className="width-sm">rangi</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-md-4">
-              <div className="card crd-2">
-                <div className="card-body">
-                  <img className="img-fluid img" src={Rectangle7} alt="ss" />
-                  lorem ipsum dolor sit amet consectetur
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 mb-3">
+                <div className="card-body p-0">
+                  <img
+                    className="img-fluid h-100 w-100"
+                    src={Rectangle7}
+                    alt="ss"
+                  />
+                  <div className="img-p pt-3 ps-3">
+                    <p>lorem ipsum dolor sit amet consectetur</p>
+                  </div>
                 </div>
-                <div className="card-footer">
+                <hr className="m-1" />
+                <div className="card-footer border-0">
                   <div className="row">
                     <div className="col-md-6 mb-3">
-                      <div className="sm px-2">
-                        <img src={Vector5} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector5} alt="ss" className="img-fluid" />{" "}
+                          200sm
+                        </div>
+                        <span className="width-sm">eni</span>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector6} alt="ss" />4 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector7} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        4 sm <span className="small float-end">eni</span>
+                    <div className="col-md-6 mb-3">
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
+                          250sm
+                        </div>
+                        <span className="width-sm">bo'yi</span>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card crd-2">
-                <div className="card-body">
-                  <img className="img-fluid img" src={Rectangle7} alt="ss" />
-                  lorem ipsum dolor sit amet consectetur
-                </div>
-                <div className="card-footer">
                   <div className="row">
                     <div className="col-md-6 mb-3">
-                      <div className="sm px-2">
-                        <img src={Vector5} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="sm-img">
+                          <img src={Vector7} alt="ss" className="img-fluid" />{" "}
+                          12.5mm
+                        </div>
+                        <span className="width-sm">qalinligi</span>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector6} alt="ss" />4 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector7} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        4 sm <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card crd-2">
-                <div className="card-body">
-                  <img className="img-fluid img" src={Rectangle7} alt="ss" />
-                  lorem ipsum dolor sit amet consectetur
-                </div>
-                <div className="card-footer">
-                  <div className="row">
                     <div className="col-md-6 mb-3">
-                      <div className="sm px-2">
-                        <img src={Vector5} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector6} alt="ss" />4 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        <img src={Vector7} alt="ss" />2 sm{" "}
-                        <span className="small float-end">eni</span>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="sm px-2">
-                        4 sm <span className="small float-end">eni</span>
+                      <div className="sm px-2 d-flex align-items-center justify-content-between">
+                        <div className="background"></div>
+                        <span className="width-sm">rangi</span>
                       </div>
                     </div>
                   </div>
