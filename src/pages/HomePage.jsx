@@ -17,16 +17,16 @@ const HomePage = () => {
     <div>
       <div className="container">
         <section id="home-section-1">
-          <div className="row mt-2 mb-3">
-            <div className="col-md-5">
+          <div className="row mb-2">
+            <div className="col-lg-8 col-xl-7">
               <p className="header-1 mt-5">
                 ДУНЙОНИНГ ЕТАКЧИ МАХСУЛОТЛАРИ БИЛАН РАКОБАЛАША ОЛАДИГАН
                 <span className="green">ГИПСАКАРТОНЛАР</span>
               </p>
             </div>
-            <div className="col-md-2" />
-            <div className="col-md-4">
-              <p className="header-2 ms-5">
+            <div className="col-xl-1 d-xl-block d-lg-none"></div>
+            <div className="col-lg-4 col-xl-4 d-flex align-items-end">
+              <p className="header-2">
                 Sifatni qadirlaydiganlar uchun ishonchli gipsakartonlarni
                 hammasi “RISE GROUP”da mujassamlashgan.
               </p>
@@ -34,7 +34,7 @@ const HomePage = () => {
           </div>
           <div className="row mb-5">
             <div className="col-md-12 mb-5">
-              <img src={Image1} alt="ss" />
+              <img src={Image1} alt="ss" className="img-fluid w-100 h-100" />
             </div>
           </div>
         </section>
@@ -52,13 +52,13 @@ const HomePage = () => {
             </div>
           </div>
           <div className="row mb-3">
-            <div className="col-md-4">
-              <div className="card">
+            <div className="col-md-4 col-sm-6">
+              <div className="card mb-3">
                 <div className="card-header border-0">
                   <img className="px-3 py-3" src={Vector} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 pb-5 ps-5">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -67,13 +67,13 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card">
+            <div className="col-md-4 col-sm-6">
+              <div className="card mb-3">
                 <div className="card-header border-0">
                   <img className="px-3 py-3" src={Vector1} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 pb-5 ps-5">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -82,13 +82,13 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card">
+            <div className="col-md-4 col-sm-6">
+              <div className="card mb-3">
                 <div className="card-header border-0">
                   <img className="px-3 py-3" src={Vector2} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 pb-5 ps-5">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -99,13 +99,13 @@ const HomePage = () => {
             </div>
           </div>
           <div className="row mb-5">
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6">
               <div className="card">
                 <div className="card-header border-0">
                   <img className="px-3 py-3" src={Vector3} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 pb-5 ps-5">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -114,14 +114,14 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4" />
-            <div className="col-md-4">
+            <div className="col-md-4 d-md-block d-sm-none" />
+            <div className="col-md-4 col-sm-6">
               <div className="card">
                 <div className="card-header border-0">
                   <img className="px-3 py-3" src={Vector4} alt="ss" />
                 </div>
                 <div className="card-body text-white position-relative">
-                  <div className="position-absolute bottom-0 pb-5 ps-5">
+                  <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2">
                     <p className="card-title">Mustahkam material</p>
                     <p className="card-subtitle">
                       Xalqaro talablarga bemalol javob beradigan gipsakartonlar
@@ -145,19 +145,19 @@ const HomePage = () => {
               </p>
             </div>
           </div>
-          <div className="row mb-5">
-            <div className="col-md-4">
-              <div className="card v-card">
+          <div className="row mb-4">
+            <div className="col-md-4 col-6">
+              <div className="card border-0 mb-2">
                 <img src={Rectangle} alt="ss" />
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card v-card">
+            <div className="col-md-4 col-6">
+              <div className="card border-0 mb-2">
                 <img src={Rectangle} alt="ss" />
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card v-card">
+            <div className="col-md-4 col-6">
+              <div className="card border-0 mb-2">
                 <img src={Rectangle} alt="ss" />
               </div>
             </div>
