@@ -33,8 +33,6 @@
 }
 #contact-section .contact-card .card {
     background: var(--f6);
-    width: 400px;
-    height: 208px;
 }
 #contact-section .contact-card .card-title {
     font-weight: 700;

@@ -17,13 +17,14 @@
     background: var(--f6);
 }
 .hero-card .card-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     color: var(--black);
 }
 .hero-card .card-subtitle {
     font-weight: 400;
     font-size: 16px;
+    line-height: 24px;
     color: var(--gray);
 }
 .about-us h1 {
