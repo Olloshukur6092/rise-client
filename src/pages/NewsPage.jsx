@@ -246,7 +246,7 @@ const NewsPage = () => {
               <p className="text-uppercase">so'nggi yangiliklarni olish uchun obuna bo'ling!</p>
             </div>
             <div className="news-form-input d-flex w-75 mx-auto">
-              <input type="text" className="form-control me-2 px-4" placeholder="Telefon raqam" />
+              <input type="number" className="form-control me-2 px-4" placeholder="Telefon raqam" />
               <input type="button" className="input-btn px-4" value="Obuna bo'lish" />
             </div>
           </div>

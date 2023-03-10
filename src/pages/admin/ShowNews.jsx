@@ -23,7 +23,7 @@ const ShowNews = () => {
                 <td>This cell inherits vertical-align: middle; from the table</td>
                 <td>@mdo</td>
                 <td>
-                  <i class="fa-solid fa-pen-to-square fa-2x me-3"></i>
+                  <i class="fa-solid fa-pen-to-square fa-2x me-4  "></i>
                   <i class="fa-solid fa-trash fa-2x "></i>
                 </td>
               </tr>
@@ -33,7 +33,7 @@ const ShowNews = () => {
                 <td>Thornton</td>
                 <td>@fat</td>
                 <td>
-                  <i class="fa-solid fa-pen-to-square fa-2x me-3"></i>
+                  <i class="fa-solid fa-pen-to-square fa-2x me-4"></i>
                   <i class="fa-solid fa-trash fa-2x "></i>
                 </td>
               </tr>

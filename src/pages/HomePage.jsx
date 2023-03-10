@@ -18,14 +18,14 @@ const HomePage = () => {
       <div className="container">
         <section id="home-section-1">
           <div className="row mt-2 mb-3">
-            <div className="col-md-5">
+            <div className="col-md-5 col-sm-2 ">
               <p className="header-1 mt-5">
                 ДУНЙОНИНГ ЕТАКЧИ МАХСУЛОТЛАРИ БИЛАН РАКОБАЛАША ОЛАДИГАН
                 <span className="green">ГИПСАКАРТОНЛАР</span>
               </p>
             </div>
             <div className="col-md-2" />
-            <div className="col-md-4">
+            <div className="col-md-4 ">
               <p className="header-2 ms-5">
                 Sifatni qadirlaydiganlar uchun ishonchli gipsakartonlarni
                 hammasi “RISE GROUP”da mujassamlashgan.
@@ -33,7 +33,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="row mb-5">
-            <div className="col-md-12 mb-5">
+            <div className="col-md-12 col-sm-12 mb-5">
               <img src={Image1} alt="ss" />
             </div>
           </div>
