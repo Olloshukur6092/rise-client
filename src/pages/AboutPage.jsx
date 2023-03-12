@@ -10,7 +10,7 @@ const AboutPage = () => {
         <div className="hero-img">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 col-2">
+              <div className="col-md-4">
                 <div className="about-us">
                   <h1 className="text-white">Biz Haqimizda</h1>
                 </div>
@@ -27,10 +27,10 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="hero-card">
+        <div className="hero-card mb-5">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 mb-4">
+              <div className="col-lg-4 col-md-4 mb-4">
                 <div className="card card-body border-0">
                   <div className="card-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -43,7 +43,7 @@ const AboutPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 mb-4">
+              <div className="col-lg-4 col-md-4 mb-4">
                 <div className="card card-body border-0">
                   <div className="card-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -56,7 +56,7 @@ const AboutPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4 mb-4">
+              <div className="col-lg-4 col-md-4 mb-4">
                 <div className="card card-body border-0">
                   <div className="card-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -74,7 +74,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section id="video-banner mt-5">
+      <section id="video-banner">
         <div className="container">
           <div className="video">
             <div className="video-text d-flex justify-content-between text-white p-4">
@@ -105,7 +105,7 @@ const AboutPage = () => {
             </div>
           </div>
           <AboutSlider />
-          <div className="team">
+          <div className="team mb-5 mt-5">
             <div className="row">
               <div className="col-md-4">
                 <div className="card border-0 img-center"></div>

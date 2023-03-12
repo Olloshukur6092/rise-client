@@ -10,11 +10,12 @@
     background-size: 100% 100%;  
     background-repeat: no-repeat;
 }
-.hero-card {
+/* .hero-card {
     margin-top: -6%;
-}
+} */
 .hero-card .card {
     background: var(--f6);
+    margin-top: -80px;
 }
 .hero-card .card-title {
     font-weight: 500;
@@ -34,14 +35,14 @@
     font-weight: 400;
     font-size: 40px;
 }
-.about-text {
+#hero-section .about-text {
     height: 400px;
     display: flex;
     align-items: flex-end;
     justify-content: end;
     padding: 15px;
 }
-.about-text p {
+#hero-section .about-text p {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -53,7 +54,8 @@
     width: 100%;
     height: 750px;
 }
-.video {
+#video-banner .video {
+
     height: 700px;
     width: 100%;
     background: url("../../assets/images/Rectangle_video.png");
@@ -63,7 +65,7 @@
     border-radius: 8px;
     background-size: 100% 100%;  
 }
-.video-icon {
+#video-banner .video-icon {
     width: 100%;
     height: 100%;
     display: flex;
@@ -72,16 +74,16 @@
     margin-top: -40px;
 }
 
-.video-icon img:hover {
+#video-banner .video-icon img:hover {
     cursor: pointer;
 }
-.video-text .h1-text {
+#video-banner .video-text .h1-text {
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
 }
-.video-text .p-text {
+#video-banner .video-text .p-text {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -197,20 +199,76 @@
         line-height: 30px;
     }
 
+    #teams p .team-span, #teams p .team-p {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    #hero-section .hero-card .card{
+        margin-bottom: 100px;
+        margin-left: 15px;
+    }
+    #video-banner {
+        margin-top: 650px;
+    }
+
+    #teams .card.card-center-text{
+        margin-top: 0 ;
+    }
+
+    #teams .card.img-center{
+        margin-top: 60px;
+    }
+
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media (min-width: 576px) and (max-width: 768px) {
-        
+    
+    #hero-section .card {
+        margin-bottom: 80px;
+    }
+    #teams  .card.card-center-text{
+        margin-top: 0;
+    }
+    #teams  .card.img-center{
+        margin-top: 0;
+    }
+
+    #video-banner .video{
+        margin-top: 300px;
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media (min-width: 768px) and (max-width: 992px) {
 
+    #video-banner {
+        margin-top: 200px;
+    }
+    #root .team{
+        margin-bottom: 95px;
+    }
+
+    #teams .card-title h3{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #teams p .team-span, #teams .team-p{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+    }
   }
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media (min-width: 992px) and (max-width: 1200px) {
+    #video-banner {
+        margin-top: 60px;
+    }
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
