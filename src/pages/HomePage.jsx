@@ -189,7 +189,7 @@ const HomePage = () => {
                 <hr className="m-1" />
                 <div className="card-footer border-0">
                   <div className="row">
-                    <div className="col-lg-6 mb-3">
+                    <div className="col-sm-6 col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="sm-img">
                           <img src={Vector5} alt="ss" className="img-fluid" />{" "}
@@ -198,18 +198,15 @@ const HomePage = () => {
                         <span className="width-sm">eni</span>
                       </div>
                     </div>
-                    <div className="col-lg-6 mb-3">
+                    <div className="col-sm-6 col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
-                        <div className="sm-img">
-                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
-                          250sm
-                        </div>
-                        <span className="width-sm">bo'yi</span>
+                        <div className="background"></div>
+                        <span className="width-sm">rangi</span>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-lg-6 mb-3">
+                    <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="sm-img">
                           <img src={Vector7} alt="ss" className="img-fluid" />{" "}
@@ -218,10 +215,13 @@ const HomePage = () => {
                         <span className="width-sm">qalinligi</span>
                       </div>
                     </div>
-                    <div className="col-lg-6 mb-3">
+                    <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
-                        <div className="background"></div>
-                        <span className="width-sm">rangi</span>
+                        <div className="sm-img">
+                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
+                          250sm
+                        </div>
+                        <span className="width-sm">bo'yi</span>
                       </div>
                     </div>
                   </div>
@@ -243,7 +243,7 @@ const HomePage = () => {
                 <hr className="m-1" />
                 <div className="card-footer border-0">
                   <div className="row">
-                    <div className="col-md-6 mb-3">
+                    <div className="col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="sm-img">
                           <img src={Vector5} alt="ss" className="img-fluid" />{" "}
@@ -252,18 +252,15 @@ const HomePage = () => {
                         <span className="width-sm">eni</span>
                       </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
-                        <div className="sm-img">
-                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
-                          250sm
-                        </div>
-                        <span className="width-sm">bo'yi</span>
+                        <div className="background"></div>
+                        <span className="width-sm">rangi</span>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6 mb-3">
+                    <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="sm-img">
                           <img src={Vector7} alt="ss" className="img-fluid" />{" "}
@@ -272,10 +269,13 @@ const HomePage = () => {
                         <span className="width-sm">qalinligi</span>
                       </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
-                        <div className="background"></div>
-                        <span className="width-sm">rangi</span>
+                        <div className="sm-img">
+                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
+                          250sm
+                        </div>
+                        <span className="width-sm">bo'yi</span>
                       </div>
                     </div>
                   </div>
@@ -297,7 +297,7 @@ const HomePage = () => {
                 <hr className="m-1" />
                 <div className="card-footer border-0">
                   <div className="row">
-                    <div className="col-md-6 mb-3">
+                    <div className="col-sm-6 col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="sm-img">
                           <img src={Vector5} alt="ss" className="img-fluid" />{" "}
@@ -306,18 +306,15 @@ const HomePage = () => {
                         <span className="width-sm">eni</span>
                       </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-sm-6 col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
-                        <div className="sm-img">
-                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
-                          250sm
-                        </div>
-                        <span className="width-sm">bo'yi</span>
+                        <div className="background"></div>
+                        <span className="width-sm">rangi</span>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6 mb-3">
+                    <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="sm-img">
                           <img src={Vector7} alt="ss" className="img-fluid" />{" "}
@@ -326,10 +323,13 @@ const HomePage = () => {
                         <span className="width-sm">qalinligi</span>
                       </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
-                        <div className="background"></div>
-                        <span className="width-sm">rangi</span>
+                        <div className="sm-img">
+                          <img src={Vector6} alt="ss" className="img-fluid" />{" "}
+                          250sm
+                        </div>
+                        <span className="width-sm">bo'yi</span>
                       </div>
                     </div>
                   </div>

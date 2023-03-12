@@ -9,6 +9,7 @@ import NewsPage from "./pages/NewsPage";
 import Create from "./pages/admin/Create";
 import ShowNews from "./pages/admin/ShowNews";
 import Login from "./pages/admin/Login";
+import ShowNewsPage from "./pages/ShowNewsPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/news" element={<NewsPage />} />
+        <Route path="/news/:id" element={<ShowNewsPage />} />
         <Route path="/admin/create" element={<Create />} />
         <Route path="/admin/news" element={<ShowNews />} />
         <Route path="/admin/login" element={<Login />} />
