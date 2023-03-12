@@ -38,7 +38,7 @@ const ContactPage = () => {
           <div className="contact-card">
             <div className="container">
               <div className="row">
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <div className="card mb-4 card-body p-4 border-0">
                     <div className="card-title border-bottom p-3">
                       <img
@@ -54,7 +54,7 @@ const ContactPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <div className="card mb-4 card-body p-4 border-0">
                     <div className="card-title border-bottom p-3">
                       <img
@@ -70,8 +70,8 @@ const ContactPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
-                  <div className="card mb-4 card-body p-4 border-0">
+                <div className="col-lg-4 col-md-6">
+                  <div className="card card-body p-4 border-0">
                     <div className="card-title border-bottom p-3">
                       <img
                         className="me-4"
