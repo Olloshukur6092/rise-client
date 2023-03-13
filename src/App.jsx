@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/layouts/Footer";
 import Header from "./components/layouts/Header";
@@ -10,11 +10,18 @@ import Create from "./pages/admin/Create";
 import ShowNews from "./pages/admin/ShowNews";
 import Login from "./pages/admin/Login";
 import ShowNewsPage from "./pages/ShowNewsPage";
+import { Header as AdminHeader } from "./pages/admin/layouts/Header";
+import { useSelector } from "react-redux";
 
 function App() {
+  const count = useSelector((state) => state.auth.count);
+  // console.log(count);
+  const { pathname } = useLocation();
+  let path = pathname.split("/");
+  console.log(path);
   return (
-    <div className="App">
-      <Header />
+    <>
+      {path[1] === "admin" ? <AdminHeader /> : <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -25,8 +32,8 @@ function App() {
         <Route path="/admin/news" element={<ShowNews />} />
         <Route path="/admin/login" element={<Login />} />
       </Routes>
-      <Footer />
-    </div>
+      {path[1] === "admin" ? "" : <Footer />}
+    </>
   );
 }
 

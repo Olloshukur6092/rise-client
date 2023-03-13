@@ -4,7 +4,6 @@ import "./header.css";
 import Logo from "../../assets/images/Logo.png";
 
 const Header = () => {
- const lang = 'uzb';
   const {pathname} = useLocation();
   const splitPath = pathname.split('/');
 
