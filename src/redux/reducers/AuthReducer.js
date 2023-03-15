@@ -1,19 +1,23 @@
-import { GET_USER } from "../constants/authConstant";
+import { AUTH_USER, GET_USER, LOG_OUT } from "../constants/authConstant";
 
 const initialState = {
-  count: 1,
+  user: localStorage.getItem("user") !== null ? JSON.parse(localStorage.getItem("user")) : null,
 };
 
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_USER:
+    case AUTH_USER:
       return {
         ...state,
-        count: state.count + 1,
+        user: action.payload,
       };
-
+    case LOG_OUT:
+      return {
+        ...state,
+        user: null,
+      }
     default:
-        return state;
+      return state;
   }
 };
 
