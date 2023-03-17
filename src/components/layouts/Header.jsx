@@ -2,11 +2,18 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import "./header.css";
 import Logo from "../../assets/images/Logo.png";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
- const lang = 'uzb';
+//  const language = 'uzb';
   const {pathname} = useLocation();
   const splitPath = pathname.split('/');
+
+  const { t, i18n } = useTranslation();
+
+  function handleClick(lang) {
+    i18n.changeLanguage(lang);
+  }
 
   return (
     <nav className="navbar navbar-expand-md bg-white border-bottom container">
@@ -43,14 +50,10 @@ const Header = () => {
           <div className="languages">
             <ul className="navbar-nav me-auto mb-2 rounded w-100">
               <li className="nav-item">
-                <Link className={lang === "uzb" ? "nav-link activeLang" : "nav-link"} to="/uzb">
-                  Узб
-                </Link>
+              <button onClick={()=>handleClick("uzb")} >Uzb</button>
               </li>
               <li className="nav-item">
-                <Link className={lang === "rus" ? "nav-link activeLang" : "nav-link"} to="/rus">
-                  Рус
-                </Link>
+              <button onClick={()=>handleClick("ru")}>Ru</button>
               </li>
             </ul>
           </div>

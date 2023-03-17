@@ -11,8 +11,12 @@ import Vector7 from "../assets/vectors-2/Vector7.png";
 import Rectangle from "../assets/images/Rectangle1.png";
 import Rectangle7 from "../assets/images/Rectangle7.png";
 import "./css/home.css";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+
+  const { t, i18n } = useTranslation();
+
   return (
     <div>
       <div className="container">
@@ -20,7 +24,7 @@ const HomePage = () => {
           <div className="row mb-2">
             <div className="col-lg-8 col-xl-7">
               <p className="header-1 mt-5">
-                ДУНЙОНИНГ ЕТАКЧИ МАХСУЛОТЛАРИ БИЛАН РАКОБАЛАША ОЛАДИГАН
+                ДУНЕНИНГ ЕТАКЧИ МАХСУДОТЛАРИ БИЛАН РАКОБАТЛАША ОЛАДИГАН
                 <span className="green">ГИПСАКАРТОНЛАР</span>
               </p>
             </div>

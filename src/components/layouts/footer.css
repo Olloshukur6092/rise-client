@@ -19,3 +19,26 @@ footer {
     font-size: 16px;
     color: var(--gray);
 }
+
+@media (max-width: 576px) {
+   
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 992px) {
+     
+
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  }
