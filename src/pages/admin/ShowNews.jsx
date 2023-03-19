@@ -1,7 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { http } from "../../api/axios";
+import { csrfSanctum } from "../../api/csrf";
+import { GET_NEWS } from "../../redux/constants/newsConstant";
 import "./styles/ShowNews.css";
 
 const ShowNews = () => {
+  const user = useSelector((state) => state.auth.user);
+  const news = useSelector((state) => state.news.news);
+  console.log(news);
+  const dispatch = useDispatch();
+
+  const getAllNews = async () => {
+    await csrfSanctum();
+    try {
+      const {
+        data: { news },
+      } = await http.get("api/news", {
+        headers: { Authorization: `Bearer ${user.token}` },
+      });
+      console.log(news);
+      dispatch({ type: GET_NEWS, payload: news });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    getAllNews();
+  }, []);
+
   return (
     <div>
       <section id="showNews" className="mt-5 mb-5">
@@ -27,30 +55,29 @@ const ShowNews = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>
-                  This cell inherits vertical-align: middle; from the table
-                </td>
-                <td>
-                  This cell inherits vertical-align: middle; from the table
-                </td>
-                <td>@mdo</td>
-                <td>
-                  <i className="fa-solid fa-pen-to-square fa-2x me-4  "></i>
-                  <i className="fa-solid fa-trash fa-2x "></i>
-                </td>
-              </tr>
-              <tr className="align-bottom">
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>
-                  <i className="fa-solid fa-pen-to-square fa-2x me-4"></i>
-                  <i className="fa-solid fa-trash fa-2x "></i>
-                </td>
-              </tr>
+              {news.length > 0 ? (
+                news.map((n) => (
+                  <tr key={n.id}>
+                    <th scope="row">1</th>
+                    <td>
+                      {n.title}
+                    </td>
+                    <td>
+                      {n.description}
+                    </td>
+                    <td>
+                      <img src={`http://localhost:8000${n.image}`} className="img-fluid" alt="No image" />
+                    </td>
+                    <td>
+                      <i className="fa-solid fa-pen-to-square fa-2x me-4  "></i>
+                      <i className="fa-solid fa-trash fa-2x "></i>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                ""
+              )}
+              
             </tbody>
           </table>
         </div>
