@@ -17,11 +17,8 @@
     "jquery": "^3.6.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
     "react-i18next": "^12.2.0",
-=======
     "react-redux": "^8.0.5",
->>>>>>> 8a33b7a61891cc29e308ae7c7c693035721f220d
     "react-router-dom": "^6.8.2",
     "react-slick": "^0.29.0",
     "redux": "^4.2.1",
