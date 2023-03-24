@@ -58,15 +58,15 @@ const ShowNews = () => {
               {news.length > 0 ? (
                 news.map((n) => (
                   <tr key={n.id}>
-                    <th scope="row">1</th>
+                    <th scope="row">{n + 1}</th>
+                    <td>{n.title}</td>
+                    <td>{n.description}</td>
                     <td>
-                      {n.title}
-                    </td>
-                    <td>
-                      {n.description}
-                    </td>
-                    <td>
-                      <img src={`http://localhost:8000${n.image}`} className="img-fluid" alt="No image" />
+                      <img
+                        src={`http://localhost:8000${n.image}`}
+                        className="img-fluid"
+                        alt="No image"
+                      />
                     </td>
                     <td>
                       <i className="fa-solid fa-pen-to-square fa-2x me-4  "></i>
@@ -75,9 +75,8 @@ const ShowNews = () => {
                   </tr>
                 ))
               ) : (
-                ""
+                <p>No data</p>
               )}
-              
             </tbody>
           </table>
         </div>
