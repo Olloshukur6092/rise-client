@@ -94,7 +94,7 @@ const Create = () => {
                         >
                           <div className="form-outline mb-4 mt-3">
                             <label className="form-label" htmlFor="title">
-                              Title
+                              Yangilik sarlavhasi
                             </label>
                             <input
                               type="text"
@@ -110,7 +110,7 @@ const Create = () => {
                               className="form-label"
                               htmlFor="form4Example3"
                             >
-                              Description
+                              Qisqacha ma'lumot
                             </label>
                             <textarea
                               className="form-control"
@@ -120,23 +120,6 @@ const Create = () => {
                               value={description}
                               onChange={(e) => setDescription(e.target.value)}
                             />
-                          </div>
-                          <div className="form-outline mb-4">
-                            <div>
-                              <label
-                                htmlFor="formFileLg"
-                                className="form-label"
-                              >
-                                Upload here image
-                              </label>
-                              <input
-                                className="form-control form-control-lg"
-                                id="formFileLg"
-                                type="file"
-                                name="file"
-                                onChange={handleFileChange}
-                              />
-                            </div>
                           </div>
                         </div>
                         <div
@@ -148,7 +131,7 @@ const Create = () => {
                         >
                           <div className="form-outline mb-4 mt-3">
                             <label className="form-label" htmlFor="title">
-                              Title
+                              Сарлавха
                             </label>
                             <input
                               type="text"
@@ -164,7 +147,7 @@ const Create = () => {
                               className="form-label"
                               htmlFor="form4Example3"
                             >
-                              Description
+                              Кискача маълумот
                             </label>
                             <textarea
                               className="form-control"
@@ -175,31 +158,28 @@ const Create = () => {
                               onChange={(e) => setDescription(e.target.value)}
                             />
                           </div>
-                          <div className="form-outline mb-4">
-                            <div>
-                              <label
-                                htmlFor="formFileLg"
-                                className="form-label"
-                              >
-                                Upload here image
-                              </label>
-                              <input
-                                className="form-control form-control-lg"
-                                id="formFileLg"
-                                type="file"
-                                name="file"
-                                onChange={handleFileChange}
-                              />
-                            </div>
-                          </div>
                         </div>
+                      </div>
+                    </div>
+                    <div className="form-outline mb-4">
+                      <div>
+                        <label htmlFor="formFileLg" className="form-label">
+                          Upload here image
+                        </label>
+                        <input
+                          className="form-control form-control-lg"
+                          id="formFileLg"
+                          type="file"
+                          name="file"
+                          onChange={handleFileChange}
+                        />
                       </div>
                     </div>
                     <button
                       className="btn btn-primary btn-lg btn-block"
                       type="submit"
                     >
-                      Login
+                      Upload
                     </button>
                   </div>
                 </form>
