@@ -1,5 +1,4 @@
 import React from "react";
-import Image1 from "../assets/images/image1.png";
 import Vector from "../assets/vectors-1/Vector.png";
 import Vector1 from "../assets/vectors-1/Vector1.png";
 import Vector2 from "../assets/vectors-1/Vector2.png";
@@ -19,12 +18,13 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="container">
-        <section id="home-section-1">
+      <section id="home-section-1">
+        <div className="container">
           <div className="row mb-2">
             <div className="col-lg-8 col-xl-7">
               <p className="header-1 mt-5">
                 ДУНЕНИНГ ЕТАКЧИ МАХСУДОТЛАРИ БИЛАН РАКОБАТЛАША ОЛАДИГАН
+                {/* {t('test')} */}
                 <span className="green">ГИПСАКАРТОНЛАР</span>
               </p>
             </div>
@@ -36,9 +36,143 @@ const HomePage = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="row mb-5">
+          <div className="home-section-img img-fluid"></div>
+        </div>
+        <div className="container">
+          <div className="cards">
+            <div className="row mb-4">
+              <div className="col-md-4">
+              <div className="card card-body sub-card-1">
+                <div className="card-title">
+                  12564+
+                </div>
+                <div className="card-subtitle">
+                  xil maxsulot
+                </div>
+              </div>
+              </div>
+              <div className="col-md-4">
+              <div className="card card-body sub-card-1">
+                <div className="card-title">
+                  12564+
+                </div>
+                <div className="card-subtitle">
+                  xil maxsulot
+                </div>
+              </div>
+              </div>
+              <div className="col-md-4">
+              <div className="card card-body sub-card-1">
+                <div className="card-title">
+                  12564+
+                </div>
+                <div className="card-subtitle">
+                  xil maxsulot
+                </div>
+              </div>
+              </div>
+            </div>
+            <div className="row mb-5">
+              <div className="col-md-6">
+                <div className="card sub-card-2">
+                  <div className="card-header">
+                    лорем ипсум долор сит амет cонсeт
+                  </div>
+                  <div className="card-body">
+                    Лорем ипсум долор сит амет cонсеcтетур. Амет нунc алиқуам феугиат арcу лорем эст. Ин а проин темпус эрат. Фаcилис.
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="card sub-card-2">
+                  <div className="card-header">
+                    лорем ипсум долор сит амет cонсeт
+                  </div>
+                  <div className="card-body">
+                    Лорем ипсум долор сит амет cонсеcтетур. Амет нунc алиқуам феугиат арcу лорем эст. Ин а проин темпус эрат. Фаcилис.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="container">
+        <section id="carousel-section">
+        <div className="row">
+            <div className="col-md-12">
+              <p className="mb-2">
+                <span className="small">Сизда куйидаги муоммолар бўлган</span>
+              </p>
+              <p className="header-3 mt-0">
+              Хорижий мамлакатлар билан рақобатлаша оладиган маҳсулотимизнинг асосий афзалликлари қуйидагилардан иборат
+              </p>
+            </div>
+          </div>
+          <div className="row mb-4">
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-header">
+                  <img src="" alt="corusel rasm 1" />
+                </div>
+                <div className="card-body">
+                  3
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card card-green">
+                <div className="card-header">
+                  <img src="" alt="corusel rasm 1" />
+                </div>
+                <div className="card-body">
+                  2
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-header">
+                  <img src="" alt="corusel rasm 1" />
+                </div>
+                <div className="card-body">
+                  3
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="row mb-5">
-            <div className="col-md-12 mb-5">
-              <img src={Image1} alt="ss" className="img-fluid w-100 h-100" />
+            <div className="col-md-4">
+              <div className="card card-green">
+                <div className="card-header">
+                  <img src="" alt="corusel rasm 1" />
+                </div>
+                <div className="card-body">
+                  3
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card">
+                <div className="card-header">
+                  <img src="" alt="corusel rasm 1" />
+                </div>
+                <div className="card-body">
+                  2
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card card-green">
+                <div className="card-header">
+                  <img src="" alt="corusel rasm 1" />
+                </div>
+                <div className="card-body">
+                  3
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -177,7 +311,7 @@ const HomePage = () => {
               </p>
             </div>
           </div>
-          <div className="row">
+          <div className="row mb-5">
             <div className="col-lg-4 col-md-6">
               <div className="card border-0 mb-3">
                 <div className="card-body p-0">
@@ -341,9 +475,42 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+          <div className="row mb-5">
+            <div className="col-md-12">
+              <p className="mb-2">
+                <span className="small">Янгиликлар</span>
+              </p>
+              <p className="header-3 mt-0">
+              RISE Group ҳақида энг сўнгги янгиликларни айнан бизнинг платформаси орқали билиб олинг
+              </p>
+            </div>
+          </div>
+          <div className="row">
+          <div className="col-lg-4 col-md-6">
+              <div className="card card-body p-0 border-0 mb-2">
+                <div className="news-image position-relative">
+                  <img src="" className="img-fluid w-100 h-100" alt="N8" />
+                  <div className="news-back position-absolute">
+                    <div className="news-text position-absolute bottom-0 p-3">
+                      <div className="news-date d-flex align-items-center">
+                        <div className="news-date-img me-2">
+                          <img src="" alt="date" />
+                        </div>
+                        <small>27-fevral, 2023</small>
+                      </div>
+                      <div className="news-title text-white">
+                        Lorem ipsum dolor sit amet.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
+    
   );
 };
 

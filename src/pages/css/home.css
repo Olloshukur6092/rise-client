@@ -4,6 +4,55 @@
   font-size: 40px;
   line-height: 44px;
 }
+
+#home-section-1 .home-section-img{
+    width: 100%;
+    height: 516px;
+    background: url("../../assets/images/image1.png");
+    background-size: cover;
+    background-size: 100% 100%;  
+    background-repeat: no-repeat;
+}
+
+#home-section-1 .sub-card-1 {
+  width: 400px;
+  height: 108px;
+  background:var(--green);
+  color: #fff;
+  text-align: center;
+
+}
+
+#home-section-1 .card-title{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+#home-section-1 .card-subtitle{
+  font-size: 16px;
+  color: #B4E4CD;
+}
+
+#home-section-1 .sub-card-2{
+  width: 610px;
+height: 145px;
+background:#EEEEEE;
+}
+
+/* #home-section-1 .cards{
+  background-color: var(--f6);
+} */
+
+#carousel-section .card{
+  width: 400px;
+  height: 400px;
+}
+
+#carousel-section .card-green{
+  background-color: var(--green);
+}
+
 #home-section-1 .green {
   color: var(--green);
   text-decoration: underline;
