@@ -12,6 +12,7 @@
     background-size: cover;
     background-size: 100% 100%;  
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 #home-section-1 .sub-card-1 {
@@ -44,13 +45,18 @@ background:#EEEEEE;
   background-color: var(--f6);
 } */
 
-#carousel-section .card{
+#home-carousel-section .card{
   width: 400px;
   height: 400px;
 }
 
-#carousel-section .card-green{
+#home-carousel-section .card-green{
   background-color: var(--green);
+}
+
+#home-section-1 .home-card-class{
+  background-color: var(--f6);
+  margin-top: -6%;
 }
 
 #home-section-1 .green {
@@ -110,7 +116,7 @@ background:#EEEEEE;
   line-height: 21px;
   color: var(--green);
 }
-
+#home-carousel-section .header-3,
 #home-section-2 .header-3,
 #home-section-3 .header-3,
 #home-section-4 .header-3 {
@@ -121,6 +127,7 @@ background:#EEEEEE;
   color: var(--black);
   text-transform: uppercase;
 }
+#home-carousel-section .small,
 #home-section-2 .small {
   font-weight: 400;
   font-size: 16px !important;

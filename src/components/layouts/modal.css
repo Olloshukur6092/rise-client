@@ -1,0 +1,39 @@
+body {
+    position: relative;
+    /* overflow-y: hidden; */
+}
+
+#modal {
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1;
+}
+#modal .modal-close {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#modal .modal-links {
+    height: 600px;
+    background: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#modal .modal-langs {
+    height: 80px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#modal .modal-contact {
+    height: 80px;
+    background: #bc8f8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

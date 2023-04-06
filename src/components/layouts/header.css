@@ -67,3 +67,8 @@ a {
   border-radius: 8px;
   color: var(--white);
 }
+
+/* navbar responsive design */
+#hamburger img {
+  cursor: pointer;
+}

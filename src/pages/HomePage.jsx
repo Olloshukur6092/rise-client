@@ -25,14 +25,13 @@ const HomePage = () => {
               <p className="header-1 mt-5">
                 ДУНЕНИНГ ЕТАКЧИ МАХСУДОТЛАРИ БИЛАН РАКОБАТЛАША ОЛАДИГАН
                 {/* {t('test')} */}
-                <span className="green">ГИПСАКАРТОНЛАР</span>
+                <span className="green ms-2">ГИПСАКАРТОНЛАР</span>
               </p>
             </div>
             <div className="col-xl-1 d-xl-block d-lg-none"></div>
             <div className="col-lg-4 col-xl-4 d-flex align-items-end">
               <p className="header-2">
-                Sifatni qadirlaydiganlar uchun ishonchli gipsakartonlarni
-                hammasi “RISE GROUP”da mujassamlashgan.
+              Сифатни қадирлайдиганлар учун ишончли гипсакартонларни ҳаммаси “RISE GROUP”да мужассамлашган.
               </p>
             </div>
           </div>
@@ -40,26 +39,16 @@ const HomePage = () => {
         <div className="row mb-5">
           <div className="home-section-img img-fluid"></div>
         </div>
-        <div className="container">
-          <div className="cards">
-            <div className="row mb-4">
+        {/* <div className="container">
+          <div className="home-card-class ">
+            <div className="row mb-4 p-3 pb-0">
               <div className="col-md-4">
               <div className="card card-body sub-card-1">
                 <div className="card-title">
                   12564+
                 </div>
                 <div className="card-subtitle">
-                  xil maxsulot
-                </div>
-              </div>
-              </div>
-              <div className="col-md-4">
-              <div className="card card-body sub-card-1">
-                <div className="card-title">
-                  12564+
-                </div>
-                <div className="card-subtitle">
-                  xil maxsulot
+                  хил махсулот
                 </div>
               </div>
               </div>
@@ -69,12 +58,22 @@ const HomePage = () => {
                   12564+
                 </div>
                 <div className="card-subtitle">
-                  xil maxsulot
+                  хил махсулот
+                </div>
+              </div>
+              </div>
+              <div className="col-md-4">
+              <div className="card card-body sub-card-1">
+                <div className="card-title">
+                  12564+
+                </div>
+                <div className="card-subtitle">
+                  хил махсулот
                 </div>
               </div>
               </div>
             </div>
-            <div className="row mb-5">
+            <div className="row mb-5 p-3 pt-0">
               <div className="col-md-6">
                 <div className="card sub-card-2">
                   <div className="card-header">
@@ -97,10 +96,10 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <div className="container">
-        <section id="carousel-section">
+        <section id="home-carousel-section">
         <div className="row">
             <div className="col-md-12">
               <p className="mb-2">
@@ -111,7 +110,7 @@ const HomePage = () => {
               </p>
             </div>
           </div>
-          <div className="row mb-4">
+          <div className="row mb-4 green-cards">
             <div className="col-md-4">
               <div className="card">
                 <div className="card-header">
@@ -180,11 +179,10 @@ const HomePage = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="mb-2">
-                <span className="small">Afzalliklarimiz</span>
+                <span className="small">Афзалликларимиз</span>
               </p>
               <p className="header-3 mt-0">
-                Xorijiy mamlakatlar bilan raqobatlasha oladigan mahsulotimizning
-                asosiy afzalliklari quyidagilardan iborat
+              Хорижий мамлакатлар билан рақобатлаша оладиган маҳсулотимизнинг асосий афзалликлари қуйидагилардан иборат
               </p>
             </div>
           </div>
@@ -196,9 +194,9 @@ const HomePage = () => {
                 </div>
                 <div className="card-body text-white position-relative">
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
-                    <p className="card-title">Mustahkam material</p>
+                    <p className="card-title">Мустаҳкам материал</p>
                     <p className="card-subtitle">
-                      Xalqaro talablarga bemalol javob beradigan gipsakartonlar
+                    Халқаро талабларга бемалол жавоб берадиган гипсакартонлар
                     </p>
                   </div>
                 </div>
@@ -211,9 +209,9 @@ const HomePage = () => {
                 </div>
                 <div className="card-body text-white position-relative">
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
-                    <p className="card-title">Mustahkam material</p>
+                    <p className="card-title">Намга чидамлилик</p>
                     <p className="card-subtitle">
-                      Xalqaro talablarga bemalol javob beradigan gipsakartonlar
+                    Гипсокартонларимиз намга ўта чидамли қилиб яратилган
                     </p>
                   </div>
                 </div>
@@ -226,9 +224,9 @@ const HomePage = () => {
                 </div>
                 <div className="card-body text-white position-relative">
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
-                    <p className="card-title">Mustahkam material</p>
+                    <p className="card-title">Овоз изолятсия</p>
                     <p className="card-subtitle">
-                      Xalqaro talablarga bemalol javob beradigan gipsakartonlar
+                    Бизнинг маҳсулотларимиз овоз изолятсиясига эга
                     </p>
                   </div>
                 </div>
@@ -243,9 +241,9 @@ const HomePage = () => {
                 </div>
                 <div className="card-body text-white position-relative">
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
-                    <p className="card-title">Mustahkam material</p>
+                    <p className="card-title">Экологик тоза</p>
                     <p className="card-subtitle">
-                      Xalqaro talablarga bemalol javob beradigan gipsakartonlar
+                      Гипсокартонларимиз экологик тоза маҳсулот ҳисобланади
                     </p>
                   </div>
                 </div>
@@ -259,9 +257,9 @@ const HomePage = () => {
                 </div>
                 <div className="card-body text-white position-relative">
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
-                    <p className="card-title">Mustahkam material</p>
+                    <p className="card-title"> Ўтда ёнмаслиги</p>
                     <p className="card-subtitle">
-                      Xalqaro talablarga bemalol javob beradigan gipsakartonlar
+                    Ўтда ёнмайдиган гипсокартон “RISE”дан қарши олинг
                     </p>
                   </div>
                 </div>
@@ -273,11 +271,10 @@ const HomePage = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="mb-0">
-                <span className="small">Afzalliklarimiz</span>
+                <span className="small">Гипсакартон ҳақида</span>
               </p>
               <p className="header-3 mt-0">
-                Xorijiy mamlakatlar bilan raqobatlasha oladigan mahsulotimizning
-                asosiy afzalliklari quyidagilardan iborat
+              Гипсакартонлар ҳақида қуйидаги видеоларимиз  Орқали батафсил ма’лумот олишингиз мумкин
               </p>
             </div>
           </div>
@@ -303,11 +300,10 @@ const HomePage = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="mb-0">
-                <span className="small">Afzalliklarimiz</span>
+                <span className="small">Гипсакартонлар</span>
               </p>
               <p className="header-3 mt-0">
-                Xorijiy mamlakatlar bilan raqobatlasha oladigan mahsulotimizning
-                asosiy afzalliklari quyidagilardan iborat
+              Гипсакартонларимиз қуйидагилардан иборат Бўлиб сиз мақулини танлашингиз мумкин
               </p>
             </div>
           </div>
@@ -333,13 +329,13 @@ const HomePage = () => {
                           <img src={Vector5} alt="ss" className="img-fluid" />{" "}
                           200sm
                         </div>
-                        <span className="width-sm">eni</span>
+                        <span className="width-sm">Эни</span>
                       </div>
                     </div>
                     <div className="col-sm-6 col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="background"></div>
-                        <span className="width-sm">rangi</span>
+                        <span className="width-sm">Ранги</span>
                       </div>
                     </div>
                   </div>
@@ -350,7 +346,7 @@ const HomePage = () => {
                           <img src={Vector7} alt="ss" className="img-fluid" />{" "}
                           12.5mm
                         </div>
-                        <span className="width-sm">qalinligi</span>
+                        <span className="width-sm">Қалинлиги</span>
                       </div>
                     </div>
                     <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
@@ -359,7 +355,7 @@ const HomePage = () => {
                           <img src={Vector6} alt="ss" className="img-fluid" />{" "}
                           250sm
                         </div>
-                        <span className="width-sm">bo'yi</span>
+                        <span className="width-sm">Бўйи</span>
                       </div>
                     </div>
                   </div>
@@ -387,13 +383,13 @@ const HomePage = () => {
                           <img src={Vector5} alt="ss" className="img-fluid" />{" "}
                           200sm
                         </div>
-                        <span className="width-sm">eni</span>
+                        <span className="width-sm">Эни</span>
                       </div>
                     </div>
                     <div className="col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="background"></div>
-                        <span className="width-sm">rangi</span>
+                        <span className="width-sm">Ранги</span>
                       </div>
                     </div>
                   </div>
@@ -404,7 +400,7 @@ const HomePage = () => {
                           <img src={Vector7} alt="ss" className="img-fluid" />{" "}
                           12.5mm
                         </div>
-                        <span className="width-sm">qalinligi</span>
+                        <span className="width-sm">Қалинлиги</span>
                       </div>
                     </div>
                     <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
@@ -413,7 +409,7 @@ const HomePage = () => {
                           <img src={Vector6} alt="ss" className="img-fluid" />{" "}
                           250sm
                         </div>
-                        <span className="width-sm">bo'yi</span>
+                        <span className="width-sm">Бўйи</span>
                       </div>
                     </div>
                   </div>
@@ -441,13 +437,13 @@ const HomePage = () => {
                           <img src={Vector5} alt="ss" className="img-fluid" />{" "}
                           200sm
                         </div>
-                        <span className="width-sm">eni</span>
+                        <span className="width-sm">Эни</span>
                       </div>
                     </div>
                     <div className="col-sm-6 col-6 mb-3">
                       <div className="sm px-2 d-flex align-items-center justify-content-between">
                         <div className="background"></div>
-                        <span className="width-sm">rangi</span>
+                        <span className="width-sm">Ранги</span>
                       </div>
                     </div>
                   </div>
@@ -458,7 +454,7 @@ const HomePage = () => {
                           <img src={Vector7} alt="ss" className="img-fluid" />{" "}
                           12.5mm
                         </div>
-                        <span className="width-sm">qalinligi</span>
+                        <span className="width-sm">Қалинлиги</span>
                       </div>
                     </div>
                     <div className="col-xxl-6 col-sm-6 col-md-12 col-lg-12 col-xl-12 mb-3">
@@ -467,7 +463,7 @@ const HomePage = () => {
                           <img src={Vector6} alt="ss" className="img-fluid" />{" "}
                           250sm
                         </div>
-                        <span className="width-sm">bo'yi</span>
+                        <span className="width-sm">Бўйи</span>
                       </div>
                     </div>
                   </div>
