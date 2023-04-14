@@ -5,56 +5,56 @@
   line-height: 44px;
 }
 
-#home-section-1 .home-section-img{
-    width: 100%;
-    height: 516px;
-    background: url("../../assets/images/image1.png");
-    background-size: cover;
-    background-size: 100% 100%;  
-    background-repeat: no-repeat;
-    z-index: -1;
+#home-section-1 .home-section-img {
+  width: 100%;
+  height: 516px;
+  background: url("../../assets/images/image1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+  /* overflow-x: hidden; */
 }
 
 #home-section-1 .sub-card-1 {
   width: 400px;
   height: 108px;
-  background:var(--green);
+  background: var(--green);
   color: #fff;
   text-align: center;
-
 }
 
-#home-section-1 .card-title{
+#home-section-1 .card-title {
   font-weight: 400;
   font-size: 40px;
   line-height: 44px;
 }
 
-#home-section-1 .card-subtitle{
+#home-section-1 .card-subtitle {
   font-size: 16px;
-  color: #B4E4CD;
+  color: #b4e4cd;
 }
 
-#home-section-1 .sub-card-2{
+#home-section-1 .sub-card-2 {
   width: 610px;
-height: 145px;
-background:#EEEEEE;
+  height: 145px;
+  background: #eeeeee;
 }
 
 /* #home-section-1 .cards{
   background-color: var(--f6);
 } */
 
-#home-carousel-section .card{
+#home-carousel-section .card {
   width: 400px;
   height: 400px;
 }
 
-#home-carousel-section .card-green{
+#home-carousel-section .card-green {
   background-color: var(--green);
 }
 
-#home-section-1 .home-card-class{
+#home-section-1 .home-card-class {
   background-color: var(--f6);
   margin-top: -6%;
 }
@@ -71,6 +71,12 @@ background:#EEEEEE;
   font-size: 18px;
   line-height: 27px;
 }
+
+/* Home Slider design */
+#carousel-section .card {
+  height: 320px;
+}
+
 #home-section-2 .card-title {
   color: var(--black);
   font-weight: 400;
@@ -132,6 +138,14 @@ background:#EEEEEE;
   font-weight: 400;
   font-size: 16px !important;
   color: var(--gray);
+}
+
+/* carousel qism */
+#carousel-section {
+  /* height: 60vh;
+  width: 100%;
+  background: #000; */
+  background: #F6F6F6;
 }
 
 /* Media query */

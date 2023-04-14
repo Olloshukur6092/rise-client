@@ -8,7 +8,7 @@ import ModalNavbar from "./ModalNavbar";
 
 const Header = () => {
   //  const language = 'uzb';
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const { pathname } = useLocation();
   const splitPath = pathname.split("/");
 

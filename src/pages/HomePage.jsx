@@ -11,9 +11,9 @@ import Rectangle from "../assets/images/Rectangle1.png";
 import Rectangle7 from "../assets/images/Rectangle7.png";
 import "./css/home.css";
 import { useTranslation } from "react-i18next";
+import HomeSlider from "../components/slider/HomeSlider";
 
 const HomePage = () => {
-
   const { t, i18n } = useTranslation();
 
   return (
@@ -31,7 +31,8 @@ const HomePage = () => {
             <div className="col-xl-1 d-xl-block d-lg-none"></div>
             <div className="col-lg-4 col-xl-4 d-flex align-items-end">
               <p className="header-2">
-              Сифатни қадирлайдиганлар учун ишончли гипсакартонларни ҳаммаси “RISE GROUP”да мужассамлашган.
+                Сифатни қадирлайдиганлар учун ишончли гипсакартонларни ҳаммаси
+                “RISE GROUP”да мужассамлашган.
               </p>
             </div>
           </div>
@@ -98,15 +99,17 @@ const HomePage = () => {
           </div>
         </div> */}
       </section>
-      <div className="container">
-        <section id="home-carousel-section">
-        <div className="row">
+
+      <section id="home-carousel-section">
+        <div className="container">
+          <div className="row">
             <div className="col-md-12">
               <p className="mb-2">
                 <span className="small">Сизда куйидаги муоммолар бўлган</span>
               </p>
               <p className="header-3 mt-0">
-              Хорижий мамлакатлар билан рақобатлаша оладиган маҳсулотимизнинг асосий афзалликлари қуйидагилардан иборат
+                Хорижий мамлакатлар билан рақобатлаша оладиган маҳсулотимизнинг
+                асосий афзалликлари қуйидагилардан иборат
               </p>
             </div>
           </div>
@@ -116,9 +119,7 @@ const HomePage = () => {
                 <div className="card-header">
                   <img src="" alt="corusel rasm 1" />
                 </div>
-                <div className="card-body">
-                  3
-                </div>
+                <div className="card-body">3</div>
               </div>
             </div>
             <div className="col-md-4">
@@ -126,9 +127,7 @@ const HomePage = () => {
                 <div className="card-header">
                   <img src="" alt="corusel rasm 1" />
                 </div>
-                <div className="card-body">
-                  2
-                </div>
+                <div className="card-body">2</div>
               </div>
             </div>
             <div className="col-md-4">
@@ -136,9 +135,7 @@ const HomePage = () => {
                 <div className="card-header">
                   <img src="" alt="corusel rasm 1" />
                 </div>
-                <div className="card-body">
-                  3
-                </div>
+                <div className="card-body">3</div>
               </div>
             </div>
           </div>
@@ -148,9 +145,7 @@ const HomePage = () => {
                 <div className="card-header">
                   <img src="" alt="corusel rasm 1" />
                 </div>
-                <div className="card-body">
-                  3
-                </div>
+                <div className="card-body">3</div>
               </div>
             </div>
             <div className="col-md-4">
@@ -158,9 +153,7 @@ const HomePage = () => {
                 <div className="card-header">
                   <img src="" alt="corusel rasm 1" />
                 </div>
-                <div className="card-body">
-                  2
-                </div>
+                <div className="card-body">2</div>
               </div>
             </div>
             <div className="col-md-4">
@@ -168,21 +161,39 @@ const HomePage = () => {
                 <div className="card-header">
                   <img src="" alt="corusel rasm 1" />
                 </div>
-                <div className="card-body">
-                  3
-                </div>
+                <div className="card-body">3</div>
               </div>
             </div>
           </div>
-        </section>
-        <section id="home-section-2">
+        </div>
+      </section>
+
+      {/* Carousel */}
+      <section id="carousel-section" className="py-5">
+        <div className="container">
+          <div className="carousel-section-text">
+            <h2 className="text-uppercase">
+              қуйидаги кўрсатилган муоммоларга берилган йечимларни кўриб
+              чиқишингиз мумкин
+            </h2>
+          </div>
+        </div>
+        <div className="container">
+            <HomeSlider />
+        </div>
+      </section>
+
+      {/* Afzalliklar */}
+      <section id="home-section-2">
+        <div className="container">
           <div className="row">
             <div className="col-md-12">
               <p className="mb-2">
                 <span className="small">Афзалликларимиз</span>
               </p>
               <p className="header-3 mt-0">
-              Хорижий мамлакатлар билан рақобатлаша оладиган маҳсулотимизнинг асосий афзалликлари қуйидагилардан иборат
+                Хорижий мамлакатлар билан рақобатлаша оладиган маҳсулотимизнинг
+                асосий афзалликлари қуйидагилардан иборат
               </p>
             </div>
           </div>
@@ -196,7 +207,7 @@ const HomePage = () => {
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Мустаҳкам материал</p>
                     <p className="card-subtitle">
-                    Халқаро талабларга бемалол жавоб берадиган гипсакартонлар
+                      Халқаро талабларга бемалол жавоб берадиган гипсакартонлар
                     </p>
                   </div>
                 </div>
@@ -211,7 +222,7 @@ const HomePage = () => {
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Намга чидамлилик</p>
                     <p className="card-subtitle">
-                    Гипсокартонларимиз намга ўта чидамли қилиб яратилган
+                      Гипсокартонларимиз намга ўта чидамли қилиб яратилган
                     </p>
                   </div>
                 </div>
@@ -226,7 +237,7 @@ const HomePage = () => {
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title">Овоз изолятсия</p>
                     <p className="card-subtitle">
-                    Бизнинг маҳсулотларимиз овоз изолятсиясига эга
+                      Бизнинг маҳсулотларимиз овоз изолятсиясига эга
                     </p>
                   </div>
                 </div>
@@ -259,22 +270,27 @@ const HomePage = () => {
                   <div className="position-absolute bottom-0 p-xxl-5 pb-xl-5 ps-xl-3 p-lg-2 pb-md-3 pb-sm-3 pe-sm-1 pb-3 ps-1">
                     <p className="card-title"> Ўтда ёнмаслиги</p>
                     <p className="card-subtitle">
-                    Ўтда ёнмайдиган гипсокартон “RISE”дан қарши олинг
+                      Ўтда ёнмайдиган гипсокартон “RISE”дан қарши олинг
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section id="home-section-3">
+        </div>
+      </section>
+      {/* Gipsakartonlar haqida */}
+
+      <section id="home-section-3">
+        <div className="container">
           <div className="row">
             <div className="col-md-12">
               <p className="mb-0">
                 <span className="small">Гипсакартон ҳақида</span>
               </p>
               <p className="header-3 mt-0">
-              Гипсакартонлар ҳақида қуйидаги видеоларимиз  Орқали батафсил ма’лумот олишингиз мумкин
+                Гипсакартонлар ҳақида қуйидаги видеоларимиз Орқали батафсил
+                ма’лумот олишингиз мумкин
               </p>
             </div>
           </div>
@@ -295,15 +311,20 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section id="home-section-4">
+        </div>
+      </section>
+
+      {/* Gipsakartonlar */}
+      <section id="home-section-4">
+        <div className="container">
           <div className="row">
             <div className="col-md-12">
               <p className="mb-0">
                 <span className="small">Гипсакартонлар</span>
               </p>
               <p className="header-3 mt-0">
-              Гипсакартонларимиз қуйидагилардан иборат Бўлиб сиз мақулини танлашингиз мумкин
+                Гипсакартонларимиз қуйидагилардан иборат Бўлиб сиз мақулини
+                танлашингиз мумкин
               </p>
             </div>
           </div>
@@ -477,12 +498,13 @@ const HomePage = () => {
                 <span className="small">Янгиликлар</span>
               </p>
               <p className="header-3 mt-0">
-              RISE Group ҳақида энг сўнгги янгиликларни айнан бизнинг платформаси орқали билиб олинг
+                RISE Group ҳақида энг сўнгги янгиликларни айнан бизнинг
+                платформаси орқали билиб олинг
               </p>
             </div>
           </div>
           <div className="row">
-          <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="card card-body p-0 border-0 mb-2">
                 <div className="news-image position-relative">
                   <img src="" className="img-fluid w-100 h-100" alt="N8" />
@@ -503,10 +525,10 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      {/* <div className="container"></div> */}
     </div>
-    
   );
 };
 
