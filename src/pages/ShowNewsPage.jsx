@@ -5,6 +5,10 @@ import Play from "../assets/images/play.png";
 import "./css/show-news.css";
 
 const ShowNewsPage = () => {
+
+
+
+  
   return (
     <section id="show-news" className="my-5">
       <div className="container">
