@@ -8,6 +8,7 @@ import "./styles/ShowNews.css";
 const ShowNews = () => {
   const user = useSelector((state) => state.auth.user);
   const news = useSelector((state) => state.news.news);
+  console.log(news)
   console.log(news);
   const dispatch = useDispatch();
 
@@ -16,7 +17,7 @@ const ShowNews = () => {
     try {
       const {
         data: { news },
-      } = await http.get("api/news", {
+      } = await http.get("news", {
         headers: { Authorization: `Bearer ${user.token}` },
       });
       console.log(news);
@@ -56,9 +57,9 @@ const ShowNews = () => {
             </thead>
             <tbody>
               {news.length > 0 ? (
-                news.map((n) => (
-                  <tr key={n.id}>
-                    <th scope="row">{n + 1}</th>
+                news.map((n, index) => (
+                  <tr key={index}>
+                    <th scope="row">{index + 1}</th>
                     <td>{n.title}</td>
                     <td>{n.description}</td>
                     <td>

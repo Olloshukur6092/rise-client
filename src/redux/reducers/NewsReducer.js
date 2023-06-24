@@ -2,6 +2,7 @@ import { ADD_NEWS, GET_NEWS } from "../constants/newsConstant";
 
 const initialState = {
   news: [],
+  success: "",
   errors: null,
 };
 
@@ -12,8 +13,11 @@ const newsReducer = (state = initialState, action) => {
         ...state,
         news: action.payload,
       };
-      case ADD_NEWS:
-        return action.payload;
+    case ADD_NEWS:
+      return {
+        ...state,
+        success: action.payload,
+      };
     default:
       return state;
   }

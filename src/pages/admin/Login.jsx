@@ -16,7 +16,7 @@ const Login = () => {
     e.preventDefault();
     await csrfSanctum();
     try {
-      const { data } = await http.post("api/login", {
+      const { data } = await http.post("login", {
         email: email,
         password: password,
       });

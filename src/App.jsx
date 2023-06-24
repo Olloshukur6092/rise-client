@@ -31,7 +31,7 @@ function App() {
   const getUser = async () => {
     try {
       if (user !== null) {
-        await http.get("api/user", {
+        await http.get("user", {
           headers: { Authorization: `Bearer ${user.token}` },
         });
       }

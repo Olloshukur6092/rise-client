@@ -1,18 +1,30 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { http } from "../../api/axios";
 import { csrfSanctum } from "../../api/csrf";
 import "./styles/Create.css";
+import { ADD_NEWS, ERROR_NEWS } from "../../redux/constants/newsConstant";
 
 const Create = () => {
-  const user = useSelector((state) => state.auth.user);
-  //   console.log(user);
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [image, setImage] = useState("");
+  const navigate = useNavigate();
+  // const user = useSelector((state) => state.auth.user);
+  const [state, setState] = useState({
+    title: "",
+    description: "",
+    title_ru: "",
+    descru: "",
+  });
+  const [image, setImage] = useState(null);
+
+  const dispatch = useDispatch();
+
+  const handleInputChange = (e) => {
+    console.log(e.target.name, e.target.value);
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
 
   const handleFileChange = (e) => {
-    console.log(e.target.files[0]);
     setImage(e.target.files[0]);
   };
 
@@ -22,18 +34,27 @@ const Create = () => {
     await csrfSanctum();
     try {
       const res = await http.post(
-        "api/news",
-        { title: title, description: description, image: image.name },
+        "news",
+        {
+          title: state.title,
+          description: state.description,
+          title_ru: state.title_ru,
+          description_ru: state.descru,
+          image: image,
+        },
         {
           headers: {
-            Authorization: `Bearer ${user.token}`,
             "Content-Type": "multipart/form-data",
+            // Authorization: `Bearar ${user.token}`,
           },
         }
       );
+      dispatch({ type: ADD_NEWS, payload: res.data.success });
+      navigate("/admin/news");
       console.log(res);
-    } catch (err) {
-      console.log(err);
+    } catch ({ response: { data } }) {
+      // dispatch({ type: ERROR_NEWS, payload: err })
+      console.log(data);
     }
   };
 
@@ -99,26 +120,25 @@ const Create = () => {
                             <input
                               type="text"
                               id="title"
+                              name="title"
                               className="form-control form-control-lg"
                               placeholder="Enter here Title"
-                              value={title}
-                              onChange={(e) => setTitle(e.target.value)}
+                              value={state.title}
+                              onChange={handleInputChange}
                             />
                           </div>
                           <div className="form-outline mb-4">
-                            <label
-                              className="form-label"
-                              htmlFor="form4Example3"
-                            >
+                            <label className="form-label" htmlFor="description">
                               Qisqacha ma'lumot
                             </label>
                             <textarea
                               className="form-control"
-                              id="form4Example3"
+                              id="description"
+                              name="description"
                               rows={4}
                               placeholder="Enter here decription"
-                              value={description}
-                              onChange={(e) => setDescription(e.target.value)}
+                              value={state.description}
+                              onChange={handleInputChange}
                             />
                           </div>
                         </div>
@@ -130,32 +150,31 @@ const Create = () => {
                           tabIndex={0}
                         >
                           <div className="form-outline mb-4 mt-3">
-                            <label className="form-label" htmlFor="title">
+                            <label className="form-label" htmlFor="title_ru">
                               Сарлавха
                             </label>
                             <input
                               type="text"
-                              id="title"
+                              id="title_ru"
+                              name="title_ru"
                               className="form-control form-control-lg"
                               placeholder="Enter here Title"
-                              value={title}
-                              onChange={(e) => setTitle(e.target.value)}
+                              value={state.title_ru}
+                              onChange={handleInputChange}
                             />
                           </div>
                           <div className="form-outline mb-4">
-                            <label
-                              className="form-label"
-                              htmlFor="form4Example3"
-                            >
+                            <label className="form-label" htmlFor="descru">
                               Кискача маълумот
                             </label>
                             <textarea
                               className="form-control"
-                              id="form4Example3"
+                              id="descru"
+                              name="descru"
                               rows={4}
                               placeholder="Enter here decription"
-                              value={description}
-                              onChange={(e) => setDescription(e.target.value)}
+                              value={state.descru}
+                              onChange={handleInputChange}
                             />
                           </div>
                         </div>
