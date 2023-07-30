@@ -1,22 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import icon from "../../assets/news/icon.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { http } from "../../api/axios";
-import { useDispatch, useSelector } from "react-redux";
-import { GET_NEWS } from "../../redux/constants/newsConstant";
 
 const NewsSlider = () => {
-  const news = useSelector((state) => state.news.news);
-  console.log(news)
-  const dispatch = useDispatch();
+  const [news, setNews] = useState([]);
+
   const getNews = async () => {
     try {
       const res = await http.get("news");
-      dispatch({ type: GET_NEWS, payload: res.data.news })
-      // console.log(res.data.news);
+      console.log(res.data.news);
+      setNews(res.data.news);
     } catch (err) {
       console.log(err);
     }
@@ -69,34 +66,41 @@ const NewsSlider = () => {
   };
 
   return (
-    <div className="row position-relative">
-      <Slider ref={sliderRef} {...settings}>
-        {news.length > 0
-          ? news.map((n, index) => (
-              <div className="col-md-2" key={index}>
-                <div className="card card-body p-0 border-0 me-3">
-                  <Link to={`/news/${n.id}`}>
-                    <div className="img-card position-relative">
-                      <img
-                        src={`http://localhost:8000${n.image}`}
-                        alt={n.title}
-                        className="img-fluid w-100 h-100"
-                      />
-                      <div className="text-card position-absolute bottom-0 w-100">
-                        <p>{n.title}</p>
+    <div>
+      {
+        news.length > 6 ? (
+          <div className="row position-relative">
+        <Slider ref={sliderRef} {...settings}>
+          {
+            news.map((n, index) => (
+                <div className="col-md-2" key={index}>
+                  <div className="card card-body p-0 border-0 me-3">
+                    <Link to={`/news/${n.id}`}>
+                      <div className="img-card position-relative">
+                        <img
+                          src={`http://localhost:8000/storage/${n.image}`}
+                          alt={n.title["uz"]}
+                          className="img-fluid w-100 h-100"
+                        />
+                        <div className="text-card position-absolute bottom-0 w-100">
+                          <p>{n.title["uz"]}</p>
+                        </div>  
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))
-          : ""}
-      </Slider>
-      <div className="carousel-icon">
-        <div className="icon">
-          <img src={icon} alt="Icon" onClick={next} />
+              ))}
+        </Slider>
+        <div className="carousel-icon">
+          <div className="icon">
+            <img src={icon} alt="Icon" onClick={next} />
+          </div>
         </div>
       </div>
+        ) : (
+          ""
+        )
+      }
     </div>
   );
 };
