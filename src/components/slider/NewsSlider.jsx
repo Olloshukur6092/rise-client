@@ -5,8 +5,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { http } from "../../api/axios";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18next";
 
 const NewsSlider = () => {
+
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  console.log(i18n)
+  
+
   const [news, setNews] = useState([]);
 
   const getNews = async () => {
@@ -67,40 +77,37 @@ const NewsSlider = () => {
 
   return (
     <div>
-      {
-        news.length > 6 ? (
-          <div className="row position-relative">
-        <Slider ref={sliderRef} {...settings}>
-          {
-            news.map((n, index) => (
-                <div className="col-md-2" key={index}>
-                  <div className="card card-body p-0 border-0 me-3">
-                    <Link to={`/news/${n.id}`}>
-                      <div className="img-card position-relative">
-                        <img
-                          src={`http://localhost:8000/storage/${n.image}`}
-                          alt={n.title["uz"]}
-                          className="img-fluid w-100 h-100"
-                        />
-                        <div className="text-card position-absolute bottom-0 w-100">
-                          <p>{n.title["uz"]}</p>
-                        </div>  
+      {news.length > 6 ? (
+        <div className="row position-relative">
+          <Slider ref={sliderRef} {...settings}>
+            {news.map((n, index) => (
+              <div className="col-md-2" key={index}>
+                <div className="card card-body p-0 border-0 me-3">
+                  <Link to={`/news/${n.id}`}>
+                    <div className="img-card position-relative">
+                      <img
+                        src={`http://localhost:8000/storage/${n.image}`}
+                        alt={n.title[language]}
+                        className="img-fluid w-100 h-100"
+                      />
+                      <div className="text-card position-absolute bottom-0 w-100">
+                        <p>{n.title[language]}</p>
                       </div>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
-              ))}
-        </Slider>
-        <div className="carousel-icon">
-          <div className="icon">
-            <img src={icon} alt="Icon" onClick={next} />
+              </div>
+            ))}
+          </Slider>
+          <div className="carousel-icon">
+            <div className="icon">
+              <img src={icon} alt="Icon" onClick={next} />
+            </div>
           </div>
         </div>
-      </div>
-        ) : (
-          ""
-        )
-      }
+      ) : (
+        ""
+      )}
     </div>
   );
 };

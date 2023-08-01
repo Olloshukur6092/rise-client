@@ -90,7 +90,7 @@ const Header = () => {
             <div className="languages">
               <ul className="navbar-nav me-auto mb-2 rounded w-100">
                 <li className="nav-item">
-                  <button className="btn " onClick={() => handleClick("uzb")}>Uzb</button>
+                  <button className="btn " onClick={() => handleClick("uz")}>Uzb</button>
                 </li>
                 <li className="nav-item">
                   <button className="btn " onClick={() => handleClick("ru")}>Ru</button>
