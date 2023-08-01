@@ -14,7 +14,11 @@ import { useTranslation } from "react-i18next";
 import HomeSlider from "../components/slider/HomeSlider";
 
 const HomePage = () => {
-  const { t, i18n } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+  
 
   return (
     <div>
@@ -24,7 +28,7 @@ const HomePage = () => {
             <div className="col-lg-8 col-xl-7">
               <p className="header-1 mt-5">
                 ДУНЕНИНГ ЕТАКЧИ МАХСУДОТЛАРИ БИЛАН РАКОБАТЛАША ОЛАДИГАН
-                {/* {t('test')} */}
+                {t('test')}
                 <span className="green ms-2">ГИПСАКАРТОНЛАР</span>
               </p>
             </div>
@@ -179,7 +183,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container">
-            <HomeSlider />
+          <HomeSlider />
         </div>
       </section>
 
